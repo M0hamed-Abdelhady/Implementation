@@ -33,7 +33,7 @@ class SegmentTree {
         if (n & (n - 1))n = 1 << (__lg(n) + 1);
         tree.assign(n << 1, opposite), lazy.assign(n << 1, -1);
         for (int i = 0; i < x.size(); ++i) tree[n + i] = x[i];
-        for (int i = n - 1; i; --i) tree[i] = max(tree[left(i)], tree[right(i)]);
+        for (int i = n - 1; i; --i) tree[i] = cmp(tree[left(i)], tree[right(i)]);
     }
 
     void update(int L, int R, int node, int Lq, int Rq, int value) {
