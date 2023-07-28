@@ -78,9 +78,9 @@ int main() {
     vector<ll> a = {1, 2, 3, 4, 5};
     SegmentTree tree(a);
     tree.update(0, 2, 120);
-//  update range from L to R
+//  update range from L to R (change them)
     tree.update(4, 150);
-//  update index i
+//  update index i (change it)
     cout << tree.RMQ(2, 3) << '\n';
     cout << tree.RMQ(2, 4) << '\n';
 //  Range Maximum Query
