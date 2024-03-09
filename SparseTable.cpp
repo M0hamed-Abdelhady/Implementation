@@ -72,7 +72,7 @@ public:
         return (rightValue == cmp(rightValue, leftValue) ? index[p][l] : index[p][r - (1 << p) + 1]);
     }
 
-    long long indexQuery(int l, int r) {
+    long long IndexQuery(int l, int r) {
 ///     Time Complexity: O(log2(N))
 
         --l, --r;
